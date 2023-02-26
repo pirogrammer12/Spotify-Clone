@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.brand{
+    font-family: 'Shantell Sans', cursive;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+}
+.brand #text{
+    margin-left: 12px;
+}
+li a:hover{
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: underline;
+    border: 2px solid rgb(245, 174, 245);
+    border-radius: 30px;
+    opacity: 0.9;
+    background-color: rgb(240, 124, 240);
+    transition: border 0.5s ease-in-out;
+}
+
+ul li{
+    display: flex;
+    margin: 0 34px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+li a{
+    display: flex;
+    color: white;
+    padding: 8px;
+    z-index: 3;
+    text-decoration: none;
+}
+
+header{
+    height: 65px;
+    background: rgb(173, 16, 173);
+}
+
+.brand img{
+    height: 40px;
+    border-radius: 55%;
+}
+p{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: "Shantell Sans";
+    height: 20vh;
+    padding: 30px;
+}
+#danger{
+    color: red;
+    background-color: black;
+    padding: 10px;
+}

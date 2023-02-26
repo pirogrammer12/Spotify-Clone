@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.text{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.brand{
+    font-family: 'Shantell Sans', cursive;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+}
+
+.brand #text{
+    margin-left: 12px;
+}
+
+li a:hover{
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: underline;
+    border: 2px solid rgb(245, 174, 245);
+    border-radius: 30px;
+    opacity: 0.9;
+    background-color: rgb(240, 124, 240);
+    transition: border 0.5s ease-in-out;
+}
+
+ul li{
+    display: flex;
+    margin: 0 34px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+li a{
+    display: flex;
+    color: white;
+    padding: 8px;
+    z-index: 3;
+    text-decoration: none;
+}
+
+header{
+    height: 65px;
+    background: rgb(173, 16, 173);
+}
+
+.brand img{
+    height: 40px;
+    border-radius: 55%;
+}
+
+.bottom{
+    background: rgb(173, 16, 173);
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.songName{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.songName:hover{
+    font-family: 'Shantell Sans', cursive;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.icons img{
+    height: 50px;
+}
+
+#startingTime{
+    position: absolute;
+    left: 10vw;
+    bottom: 36px;
+}
+
+#songDuration{
+    position: absolute;
+    left: 87.5vw;
+    bottom: 36px;
+}
+
+#masterSongName{
+    position: absolute;
+    left: 15vw;
+    bottom: 36px;
+    color: white;
+}
+
+#previous{
+    left: 45.6vw;
+    position: absolute;
+    cursor: pointer;
+    bottom: 9px;
+}
+
+#previous img{
+    height: 34px;
+    width: 38px;
+    border-radius: 45%;
+}
+
+#next{
+    left: 53vw;
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+}
+
+#next img{
+    height: 34px;
+    width: 38px;
+    border-radius: 40%;
+}
+
+#pause{
+    display: none;
+    position: absolute;
+    left: 49vw;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+#pause img{
+    height: 55px;
+}
+
+#play{
+    position: absolute;
+    left: 49vw;
+    bottom: 2.9px;
+    cursor: pointer;
+    display: flex;
+}
+
+#skip img{
+    height: 50px;
+    margin-top: -3px;
+}
+
+#skip{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    left: 57vw;
+    bottom: 2.9px;
+}
+
+#back img{
+    height: 40px;
+}
+
+#back{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    left: 41.8vw;
+    bottom: 8px;
+}
+
+.container{
+    max-height: calc(100vh - 65px - 85px);
+    background: url(./Images/bg.jpg);
+    margin: 34px;
+    border-radius: 13px;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songItem{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    align-items: center;
+    width: 350px;
+    border-radius: 34px;
+    height: 36px;
+}
+
+.cover img{
+    height: 34px;
+    border-radius: 45%;
+    margin: 1.5px -65px;
+}
+
+#progressBar{
+    width: 80vw;
+    margin: 10px 10vw;
+    cursor: pointer;
+}
