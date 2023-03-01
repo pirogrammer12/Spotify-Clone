@@ -40,7 +40,6 @@ const updateTime = ()=>{
     let seconds = Math.floor(ctime % 60);
     let finalTime = minutes + ":"  + (seconds < 10 ? "0" : "") + seconds    
     startingTime.innerText = finalTime
-    console.log(finalTime)
 }
 const changeMasterSongName = () =>{
     masterSongName.innerText = songs[songIndex].songName
