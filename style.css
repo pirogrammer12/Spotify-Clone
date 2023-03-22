@@ -188,6 +188,8 @@ header{
 .container{
     max-height: calc(100vh - 65px - 85px);
     background: url(./Images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 34px;
     border-radius: 13px;
     height: 72vh;
