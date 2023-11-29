@@ -42,6 +42,7 @@ const updateTime = ()=>{
 const changeMasterSongName = () =>{
     masterSongName.innerText = songs[songIndex].songName
 }
+
 const makeAllNone = () =>{
     Array.from(document.getElementsByClassName('text')).forEach((element)=>{
         element.style.display = "none"
@@ -80,7 +81,7 @@ pause.addEventListener('click', ()=>{
 
 previous.addEventListener('click', ()=>{
     if (songIndex <= 0){
-        songIndex = 10
+        songIndex = 11
     }
     else{
         songIndex -= 1
@@ -97,7 +98,7 @@ previous.addEventListener('click', ()=>{
 })
 
 next.addEventListener('click', ()=>{
-    if (songIndex >= 10){
+    if (songIndex >= 11){
         songIndex = 0
     }
     else{
@@ -133,7 +134,10 @@ songNames.forEach((elem)=>{
 song.addEventListener('timeupdate', ()=>{
     progress = parseInt((song.currentTime/song.duration)*100)
     if (progress > 99){
-        songIndex += 1
+        if(songIndex >= 11){
+            songIndex = 0
+        }
+        else { songIndex += 1}
         progress = 0
         makeAllNone()
         let current = document.getElementsByClassName('text')[songIndex]
