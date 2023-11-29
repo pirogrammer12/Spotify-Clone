@@ -43,6 +43,7 @@ li a:hover{
     opacity: 0.9;
     background-color: rgb(240, 124, 240);
     transition: border 0.5s ease-in-out;
+    transition: all 100ms linear;
 }
 
 ul li{
@@ -89,6 +90,7 @@ header{
     cursor: pointer;
     text-decoration: underline;
     font-weight: bolder;
+    transition: all 1s linear;
 }
 
 .icons img{
@@ -185,6 +187,11 @@ header{
     bottom: 8px;
 }
 
+.songList .rows{
+    max-height: 60vh;
+    display: flex;
+}
+
 .container{
     max-height: calc(100vh - 65px - 85px);
     background: url(./Images/bg.jpg);
@@ -194,13 +201,21 @@ header{
     border-radius: 13px;
     height: 72vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.container h2{
+    margin: 40px;
+    font-family: 'operator mono', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+
+}
+
 .songItem{
     background-color: white;
-    margin: 10px;
+    margin: 15px;
     display: flex;
     justify-content: space-evenly;
     color: black;

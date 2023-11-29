@@ -1,5 +1,3 @@
-console.log("Welcome to Spotify!")
-
 let songIndex = 0
 let song = new Audio('./Songs/1.mp3')
 let pause = document.getElementById('pause')
@@ -28,8 +26,8 @@ let songs = [
     {songName: "Drive Forever", filePath: "./Songs/9.mp3"},
     {songName: "Shoorveer 3", filePath: "./Songs/10.mp3"},
     {songName: "Raatan Lambeyan", filePath: "./Songs/11.mp3"},
+    {songName: "Khalasi: Gotilo", filePath: "/Songs/12.mp3"}
 ]
-// {songName: "Hil ki aawaz nhi aayi ", filePath: "./Songs/1.mp3"}
 
 // Functions
 const updateTime = ()=>{
@@ -49,6 +47,7 @@ const makeAllNone = () =>{
         element.style.display = "none"
     }) 
 }
+
 // Handling Buttons
 songItems.forEach((element, i)=> {
     element.getElementsByClassName('songName')[0].innerText = songs[i].songName
