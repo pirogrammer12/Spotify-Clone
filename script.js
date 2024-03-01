@@ -197,9 +197,11 @@ document.addEventListener('keydown', (e)=>{
         song.currentTime -= 5
     }
     else if(e.code == "ArrowDown"){
-        song.volume -= 5
+        if (song.volume == 0) {console.log("volume lowest")}
+        song.volume -= .1
     }
     else if (e.code == "ArrowUp"){
-        song.volume += 5
+        if (song.volume == 1) {console.log("volume lowest")}
+        song.volume += .1
     }
 });
